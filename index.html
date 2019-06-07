@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen"></style>
+    <link rel="stylesheet" href="css/gui.css" type="text/css">
+
+  </head>
+  <body>
+    <!-- <h1>Game</h1> -->
+    <script src="build/three.js"></script>
+    <script src="js/loaders/GLTFLoader.js"></script>
+    <script src="js/controls/OrbitControls.js"></script>
+
+		<script src="js/Detector.js"></script>
+		<script src="js/libs/stats.min.js"></script>
+    <script src="js/Tween.js"></script>
+    <script src="js/shaders/BokehShader2.js"></script>
+    <script src="js/cameras/CinematicCamera.js"></script>
+    <div class="div-container" id='info'>
+      <div class="stats" id="stats"></div>
+      <div class='clock' id='clock'></div>
+      <div class='points' id="points"></div>
+      <div class="labels" id='labels'></div>
+      <div class="button-container" id='options'>
+        <button class="btn-ui btn-one scale-in-center"  type="button" id="left">Izquierda</button>
+        <button class="btn-ui btn-one scale-in-center"  type="button" id="forward">Adelante</button>
+        <button class="btn-ui btn-one scale-in-center"  type="button" id="right">Derecha</button>
+      </div>
+    </div>
+    <div id="container"></div>
+
+
+    <section id='loading-screen'>
+      <div id='loader'></div>
+    </section>
+     <!-- <div id='win-screen'>
+        <br/>
+        <p>HAS GANADO!</p>
+        <br/>
+        <div class='GUI' id='TotalPoints'></div>
+    </div> -->
+    <!-- <div id='lose-screen'>
+       <br/>
+       <p>HAS PERDIDO!</p>
+       <br/>
+   </div> -->
+   <!-- <div id='app-ui'>
+
+     <button id="start" type="button">COMENZAR</button>
+   </div> -->
+    <div id='blocker'>
+      <h1 id="main-title" >
+        BUAP
+      </h1>
+      <div>
+        <br/>
+          <!-- <p></p>
+          <p>Comienzas con 1000 puntos, tienes 3 minutos para encontrar el objeto.
+          <br/> Reglas: <br/><br/>
+            * No chocar,
+            * respetar las señales
+          <br/><br/>
+        </p> -->
+        <button id="start" class='btn btn-two' type="button"><span> COMENZAR </span></button>
+        <br><br>
+        <!-- <p>W,A,S,D = MOVIMIENTO, ESPACIO = PARAR, MOUSE = MOVER CAMARA</p> -->
+        </div>
+    </div>
+    <script src="js/Game/SeriousGame.js"></script>
+  </body>
+</html>
